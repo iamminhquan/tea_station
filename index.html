@@ -23,6 +23,9 @@
       rel="stylesheet"
     />
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
     <meta name="description" content="" />
 
     <meta property="og:title" content="" />
@@ -95,8 +98,28 @@
     <!----------------
       Partner logos
     ----------------->
-    <section id="partner-logos"></section>
+    <section id="partner-logos">
+      <div class="container">
+        <!-- Heading -->
+        <div class="mt-10">
+          <h2 class="sub_heading">Có mặt tại</h2>
+          <h1 class="main_heading">
+            Những nhà phân phối <span class="text-gradient">uy tín</span>
+          </h1>
+        </div>
 
-    <script src="js/app.js"></script>
+        <!-- Logos -->
+        <div
+          class="flex mt-9 md:mt-16 mask-[linear-gradient(to_right,transparent,black,transparent)]"
+        >
+          <div
+            id="partner-logo-list"
+            class="flex flex-none logos-wrapper gap-14 pl-14"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
