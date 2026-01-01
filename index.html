@@ -1,31 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tea Station</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="./css/output.css">
-  <meta name="description" content="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/output.css" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <meta name="description" content="" />
 
-<body>
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
 
-<script src="js/app.js"></script>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
 
-</body>
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
+  <body>
+    <!----------------
+      Hero
+    ----------------->
+    <section
+      id="hero"
+      class="h-screen max-h-275 bg-linear-to-t from-primary-100 to-white overflow-y-clip"
+    >
+      <div
+        class="container relative flex items-center justify-center w-full h-full xl:justify-start"
+      >
+        <!-- Images -->
+        <div
+          class="absolute bottom-0 right-0 overflow-hidden z-0 md:bottom-40 xl:top-1/2 xl:-translate-y-1/2"
+        >
+          <img src="./assets/hero_img.png" alt="hero-img" class="h-full" />
+        </div>
+
+        <!-- Main content -->
+        <div
+          class="flex flex-col items-center justify-center gap-4 z-10 md:gap-9 xl:items-start"
+        >
+          <h2
+            class="mb-2 text-xs font-semibold leading-none tracking-wider text-center uppercase font-inter md:text-sm xl:text-start"
+          >
+            hơn
+            <span class="text-xs text-gradient md:text-sm">một trăm</span> hương
+            vị trà
+          </h2>
+          <h1
+            class="text-5xl leading-none tracking-wide text-center capitalize font-lobster text-primary-900 md:text-6xl lg:text-7xl"
+          >
+            Trà Đặc Biệt Chế Tác
+          </h1>
+
+          <p
+            class="max-w-xl px-4 text-center text-neutral-700 md:px-0 xl:text-start"
+          >
+            Sứ mệnh của chúng tôi là mang đến cho bạn sự yên bình và kết nối
+            thông qua các hương vị trà được chọn lọc cẩn thận và được tạo ra để
+            nâng cao trải nghiệm hàng ngày và sức khoẻ toàn diện cho bạn.
+          </p>
+
+          <button>
+            <a class="btn" href="#"
+              >Tìm Hiểu Sản Phẩm
+              <img src="./assets/right-arrow.svg" alt="right-arrow"
+            /></a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!----------------
+      Partner logos
+    ----------------->
+    <section id="partner-logos"></section>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>

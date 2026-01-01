@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@config "../tailwind.config.js";
+
 /** Theme **/
 @theme {
   /* Screens */
@@ -11,4 +13,53 @@
   /* Fonts */
   --font-lobster: "Lobster", serif;
   --font-inter: "Inter", sans-serif;
+}
+
+@utility container {
+  margin-inline-start: auto;
+  padding-inline: 1rem;
+  padding-block: 2rem;
+  width: 100%;
+  overflow: clip;
+  max-width: 1536px;
+
+  @media (min-width: theme(screens.md)) {
+    padding-inline: 4.5rem;
+    padding-block: 3rem;
+  }
+}
+
+@layer base {
+  body {
+    @apply text-base font-inter overflow-hidden;
+  }
+
+  p {
+    @apply text-sm leading-7 font-inter;
+  }
+
+  button {
+    @apply px-1 py-1 border cursor-pointer;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex items-center justify-center gap-2 px-4 py-2 text-sm tracking-wider text-white 
+    bg-primary-900 hover:bg-primary-700 border-primary-900 transition-colors duration-500
+    font-inter lg:py-3 lg:px-9;
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      to right,
+      theme("colors.primary.600"),
+      theme("colors.primary.900")
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer utility {
 }
